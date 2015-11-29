@@ -1,0 +1,31 @@
+{
+  "name": "calortrak-app",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "^1.4.4",
+    "angular-jwt": "0.0.9",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.5",
+    "css-loader": "^0.16.0",
+    "datejs": "0.0.2",
+    "file-loader": "^0.8.4",
+    "hellojs": "^1.9.6",
+    "html-webpack-plugin": "^1.6.1",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "lodash": "^3.10.1",
+    "rx": "^3.1.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node server.js",
+    "dev": "webpack-dev-server --port 80 --config webpack.config.js --host 0.0.0.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

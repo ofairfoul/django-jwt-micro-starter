@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <span class="navbar-brand">Calortrak</span>
+    </div>
+
+    <ul class="nav navbar-nav" ng-if="canManageUsers">
+      <li ui-sref-active="active"><a ui-sref="root.meals">Meals</a></li>
+      <li ui-sref-active="active"><a ui-sref="root.users">Users</a></li>
+    </ul>
+
+    <div class="navbar-right">
+      <p class="navbar-text">
+        Welcome {{username}}
+      </p>
+      <a class="btn btn-default navbar-btn" ui-sref="root.settings"><span class="glyphicon glyphicon-cog"></span></a>
+      <a class="btn btn-default navbar-btn" ng-click="logout()">Logout</a>
+    </div>
+
+  </div>
+</nav>
+<div class="container-fluid">
+  <div ui-view></div>
+</div>

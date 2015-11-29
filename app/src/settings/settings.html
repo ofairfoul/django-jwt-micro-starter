@@ -1,0 +1,18 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">Settings</div>
+    <div class="panel-body">
+
+      <form name="form">
+        <div class="form-group">
+          <label>Max Calories Per Day</label>
+          <input name="maxDayCalories" ng-model="maxDayCalories" type="number" class="form-control" required min="0">
+        </div>
+
+        <button class="btn btn-primary" ng-disabled="form.$invalid" ng-click="submit()">Save</button>
+        <a class="btn btn-default" ui-sref="root.meals">Cancel</a>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+app:
+  build: ./app
+  volumes:
+    - ./app:/usr/src/app
+  command: npm run dev
+  environment:
+    - DNSDOCK_ALIAS=www.django-starter.dev.com
+
+auth:
+  build: ./auth
+  volumes:
+    - ./auth:/usr/src/app
+  environment:
+    - DNSDOCK_ALIAS=auth.django-starter.dev.com
+  stdin_open: true
+  tty: true
+
+api:
+  build: ./api
+  volumes:
+    - ./api:/usr/src/app
+  environment:
+    - DNSDOCK_ALIAS=api.django-starter.dev.com
+  stdin_open: true
+  tty: true
